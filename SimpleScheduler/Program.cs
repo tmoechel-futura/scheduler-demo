@@ -26,28 +26,28 @@ IScheduler scheduler = await factory.GetScheduler();
 // and start it off
 await scheduler.Start();
 
-// define the job and tie it to our HelloJob class
-IJobDetail job = JobBuilder.Create<HelloJob>()
-    .WithIdentity("job1", "group1")
+var auction = new Auction { Name = "Sample Auction" };
+
+// define the job and tie it to our RunAuctionJob class
+IJobDetail job = JobBuilder.Create<RunAuctionJob>()
+    .WithIdentity("auctionJob", "group1")
+    .UsingJobData(new JobDataMap { { "auction", auction } })
     .Build();
 
-// Trigger the job to run now, and then repeat every 10 seconds
+// Trigger the job to run now
 ITrigger trigger = TriggerBuilder.Create()
     .WithIdentity("trigger1", "group1")
     .StartNow()
-    .WithSimpleSchedule(x => x
-        .WithIntervalInSeconds(10)
-        .RepeatForever())
     .Build();
 
 // Tell Quartz to schedule the job using our trigger
 await scheduler.ScheduleJob(job, trigger);
 
-// You could also schedule multiple triggers for the same job with
-// await scheduler.ScheduleJob(job, new List<ITrigger>() { trigger1, trigger2 }, replace: true);
+Console.WriteLine($"[Program] Auction scheduled. Initial state: {auction.State}");
 
 // some sleep to show what's happening
-await Task.Delay(TimeSpan.FromSeconds(30));
+await Task.Delay(TimeSpan.FromSeconds(5));
+Console.WriteLine($"[Program] Final Auction state: {auction.State}");
 
 // and last shut down the scheduler when you are ready to close your program
 await scheduler.Shutdown();
