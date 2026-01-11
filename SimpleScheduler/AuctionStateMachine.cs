@@ -15,17 +15,17 @@ public enum AuctionTrigger
 
 public class AuctionStateMachine
 {
-    private readonly StateMachine<AuctionState, AuctionTrigger> _machine;
+    private readonly StateMachine<AuctionState, AuctionTrigger> _auctionStateMachine;
 
     public AuctionStateMachine(AuctionState initialState = AuctionState.InPreparation)
     {
-        _machine = new StateMachine<AuctionState, AuctionTrigger>(initialState);
+        _auctionStateMachine = new StateMachine<AuctionState, AuctionTrigger>(initialState);
 
-        _machine.Configure(AuctionState.InPreparation)
+        _auctionStateMachine.Configure(AuctionState.InPreparation)
             .Permit(AuctionTrigger.Run, AuctionState.Running);
     }
 
-    public AuctionState State => _machine.State;
+    public AuctionState State => _auctionStateMachine.State;
 
-    public void Run() => _machine.Fire(AuctionTrigger.Run);
+    public void Run() => _auctionStateMachine.Fire(AuctionTrigger.Run);
 }
