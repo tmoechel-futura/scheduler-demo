@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleScheduler", "SimpleScheduler\SimpleScheduler.csproj", "{BCEB252B-8580-410A-948A-DBD79F3959EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchedulerService", "SchedulerService\SchedulerService.csproj", "{EC845116-BE12-438E-A4FC-68A7D414CE05}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BCEB252B-8580-410A-948A-DBD79F3959EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCEB252B-8580-410A-948A-DBD79F3959EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCEB252B-8580-410A-948A-DBD79F3959EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCEB252B-8580-410A-948A-DBD79F3959EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC845116-BE12-438E-A4FC-68A7D414CE05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC845116-BE12-438E-A4FC-68A7D414CE05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC845116-BE12-438E-A4FC-68A7D414CE05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC845116-BE12-438E-A4FC-68A7D414CE05}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
