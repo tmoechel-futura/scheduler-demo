@@ -11,6 +11,7 @@
       <PackageReference Include="Microsoft.Extensions.Logging" Version="10.0.1" />
       <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="10.0.1" />
       <PackageReference Include="Quartz" Version="3.15.1" />
+      <PackageReference Include="Stateless" Version="5.20.0" />
     </ItemGroup>
 
 </Project>

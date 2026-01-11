@@ -9,7 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dafca4f-cae4-4f01-8f57-2988bfa53aec" name="Changes" comment="" />
+    <list default="true" id="7dafca4f-cae4-4f01-8f57-2988bfa53aec" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/SimpleScheduler/Auction.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SimpleScheduler/AuctionStateMachine.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SimpleScheduler/RunAuctionJob.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimpleScheduler/SimpleScheduler.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleScheduler/SimpleScheduler.csproj" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,6 +30,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "tmoechel-futura"
+  }
+}]]></component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/tmoechel-futura/scheduler-demo",
@@ -32,7 +43,8 @@
   }
 }]]></component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/SchedulerService/Class1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SimpleScheduler/Auction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SimpleScheduler/AuctionStateMachine.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SimpleScheduler/HelloJob.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SimpleScheduler/Program.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -131,7 +143,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1768116261795</updated>
-      <workItem from="1768116262569" duration="2346000" />
+      <workItem from="1768116262569" duration="3391000" />
     </task>
     <task id="LOCAL-00001" summary="Simple Scheduler">
       <option name="closed" value="true" />
@@ -141,7 +153,23 @@
       <option name="project" value="LOCAL" />
       <updated>1768118621807</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add project files">
+      <option name="closed" value="true" />
+      <created>1768118696150</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1768118696150</updated>
+    </task>
+    <task id="LOCAL-00003" summary="delete class1 and remove">
+      <option name="closed" value="true" />
+      <created>1768118736035</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1768118736036</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,7 +180,9 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Simple Scheduler" />
-    <option name="LAST_COMMIT_MESSAGE" value="Simple Scheduler" />
+    <MESSAGE value="add project files" />
+    <MESSAGE value="delete class1 and remove" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete class1 and remove" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
